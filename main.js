@@ -5,23 +5,25 @@ let win;
 function createWindow () {
   // Create the browser window.
   win = new BrowserWindow({
-    width: 1024, 
-    height: 768,
+    width: 900, 
+    height: 700,
     show: false,
+    resizable: false,
     backgroundColor: '#ffffff',
     icon: `file://${__dirname}/dist/HomeCentral/assets/logo.png`
   })
 
-  win.set
 
-  win.loadURL(`file://${__dirname}/dist/HomeCentral/index.html`)
+  //win.loadURL(`file://${__dirname}/dist/HomeCentral/index.html`)
+
+  win.loadURL("http://localhost:4200/")
 
   //// uncomment below to open the DevTools.
   // win.webContents.openDevTools()
 
   // Event when the window is closed.
   win.on('closed', function () {
-    win = null
+    app.quit()
   })
 
   win.once('ready-to-show', () => {
