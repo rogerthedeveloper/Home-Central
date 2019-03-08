@@ -9,7 +9,7 @@ function createWindow () {
     height: 700,
     show: false,
     resizable: false,
-    backgroundColor: '#ffffff',
+    backgroundColor: '#FFF',
     icon: `file://${__dirname}/dist/HomeCentral/assets/logo.png`
   })
 

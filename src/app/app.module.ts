@@ -4,13 +4,15 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import 'hammerjs';
 import {MatCardModule} from '@angular/material/card'; 
-import {MatSlideToggleModule} from '@angular/material/slide-toggle'; 
 import {MatMenuModule} from '@angular/material/menu'; 
 import {MatIconModule} from '@angular/material/icon'; 
 import {MatButtonModule} from '@angular/material/button'; 
 import {MatToolbarModule} from '@angular/material/toolbar'; 
 import {MatGridListModule} from '@angular/material/grid-list';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle'; 
+import {MatDividerModule} from '@angular/material/divider'; 
 
 import { RouterModule, Routes } from '@angular/router';
 
@@ -29,11 +31,6 @@ import { LoginComponent } from './pages/login/login.component'
 const routes: Routes = [
   {
     path: '',
-    component: AppComponent,
-    pathMatch: "full"
-  },
-  {
-    path: 'welcome',
     component: WelcomeComponent
   },
   {
@@ -68,7 +65,8 @@ const routes: Routes = [
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
