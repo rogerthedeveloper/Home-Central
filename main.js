@@ -13,7 +13,6 @@ function createWindow () {
     icon: `file://${__dirname}/dist/HomeCentral/assets/logo.png`
   })
 
-
   //win.loadURL(`file://${__dirname}/dist/HomeCentral/index.html`)
 
   win.loadURL("http://localhost:4200/")
